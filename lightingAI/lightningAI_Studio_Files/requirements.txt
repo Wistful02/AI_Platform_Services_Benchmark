@@ -1,0 +1,9 @@
+torch
+transformers
+torchaudio
+soundfile
+requests
+fastapi
+uvicorn
+litserve
+pydantic
