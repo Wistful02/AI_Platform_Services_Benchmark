@@ -1,0 +1,8 @@
+model_name: w2v2_Benchmark
+python_version: py311
+resources:
+  accelerator: H100
+  cpu: '1'
+  memory: 2Gi
+  use_gpu: true
+requirements: [torch, transformers, numpy, torchaudio]
