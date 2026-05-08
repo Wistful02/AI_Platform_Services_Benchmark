@@ -5,13 +5,14 @@ import pandas as pd
 import soundfile as sf
 from tqdm import tqdm
 import time
+import os
 
 # --- Config ---
 file_path = "clip_1_2sec.wav"
 url = "UR-URL"  # Replace 'run' with your handler name if different
 headers = {
-    'Authorization': '{os.getenv('Cer_API_TOKEN')}',
-    'Content-Type': 'application/json'
+    "Authorization": f"Bearer {os.environ['CEREBRIUM_API_TOKEN']}",
+    "Content-Type": "application/json",
 }
 
 # --- Load and normalize audio ---
