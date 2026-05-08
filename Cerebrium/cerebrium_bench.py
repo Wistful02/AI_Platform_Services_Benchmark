@@ -10,7 +10,7 @@ import time
 file_path = "clip_1_2sec.wav"
 url = "UR-URL"  # Replace 'run' with your handler name if different
 headers = {
-    'Authorization': 'UR-API-KEY',
+    'Authorization': '{os.getenv('Cer_API_TOKEN')}',
     'Content-Type': 'application/json'
 }
 
